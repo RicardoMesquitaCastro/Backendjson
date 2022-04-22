@@ -27,7 +27,7 @@ PostSchema.pre("remove", function() { //quando o usuario excluir uma imagem tamb
   if (process.env.STORAGE_TYPE === "s3") {
     return s3
       .deleteObject({
-        bucket: "uploadbrasa",
+        bucket: "uploadbrasa2",
         Key: this.key
       })
       .promise()
